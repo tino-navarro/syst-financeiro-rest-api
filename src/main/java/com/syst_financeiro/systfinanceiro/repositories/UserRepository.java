@@ -1,4 +1,4 @@
-package repositories;
+package com.syst_financeiro.systfinanceiro.repositories;
 
 import com.syst_financeiro.systfinanceiro.entities.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

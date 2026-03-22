@@ -1,11 +1,11 @@
-package services;
+package com.syst_financeiro.systfinanceiro.services;
 
 import com.syst_financeiro.systfinanceiro.entities.UserEntity;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import repositories.UserRepository;
+import com.syst_financeiro.systfinanceiro.repositories.UserRepository;
 
 public class UserService implements UserDetailsService {
 

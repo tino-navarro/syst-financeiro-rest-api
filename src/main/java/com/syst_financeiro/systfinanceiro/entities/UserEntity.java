@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
-@Table(name = "cl_user")
+@Table(name = "tb_user")
 public class UserEntity implements UserDetails {
 
     @Id
