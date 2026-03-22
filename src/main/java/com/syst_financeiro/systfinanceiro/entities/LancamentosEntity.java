@@ -38,9 +38,10 @@ public class LancamentosEntity {
     private CategoriasEntity category;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "subcategory_id", nullable = false)
+    @JoinColumn(name = "subcategory_id")
     private SubCategoriasEntity subcategory;
 
+    @Enumerated(EnumType.STRING)
     @Column(length = 30, nullable = false)
     private FormasPagamentos paymentMethod;
 

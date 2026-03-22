@@ -27,7 +27,7 @@ public class UserEntity implements UserDetails {
     @JsonIgnore
     private String password;
 
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private UserType type;
 

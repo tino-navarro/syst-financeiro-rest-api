@@ -15,6 +15,10 @@ public class SubCategoriasEntity {
     @Column(length = 100, nullable = false)
     private String name;
 
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "category_id", nullable = false)
+    private CategoriasEntity category;
+
     public UUID getId() {
         return id;
     }
